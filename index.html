@@ -13,9 +13,12 @@
         <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
-        <div class="title-header">Ознакомьтесь с моими навыками и опытом работы в качестве frontend-разработчика.</div>
+        <div class="title-header">Ознакомьтесь с моими навыками и опытом работы
+            в качестве frontend-разработчика.</div>
         <button class="btn btn-header">
             <a href="https://github.com/MagIrina" target="_blank">Просмотреть портфолио</a></button>
+        <button class="btn btn-header" id="transition">
+            Прайс-лист</button>
     </div>
 </header>
 
@@ -29,6 +32,8 @@
                 <span class="main-info-img-span">Михайлинова Ирина Александровна</span>
                 <p class="main-info-img-p"> дата рождения: </p>
                 <span class="main-info-img-span"> 13.12.1991г</span>
+                <p class="main-info-img-p"> телефон: </p>
+                <span class="main-info-img-span"> 8-909-399-15-39 </span>
                 <p class="main-info-img-p"> электронная почта: </p>
                 <span class="main-info-img-span">magira13@yandex.ru</span>
                 <p class="main-info-img-p"> GIT: </p>
@@ -40,7 +45,7 @@
                 </span>
             </div>
             <div class="main-info-experience">
-                <p class="main-info-experience-p">купсы повышения квалификации: <a target="_blank" href="https://itlogia.ru/">Онлайн-школа
+                <p class="main-info-experience-p">Курсы повышения квалификации: <a target="_blank" href="https://itlogia.ru/">Онлайн-школа
                     Айтилогия</a></p>
                 <span class="main-info-experience-span"> Frontend-разработчик c 27.08.2024 по н.в. - </span>
                 <ul class="main-info-experience-list">
@@ -63,6 +68,14 @@
                         </p>
                         <span>Навыки: верстка по Photoshop-макету, CSS/LESS, JS
                             AJAX, адаптивная верстка, анимация...  </span>
+                    </li>
+                    <li class="main-info-experience-paragraph">
+                        <p>Test-task 9 -
+                        <a href="https://magirina.github.io/test-task-9/" target="_blank">
+                            Test-task 9</a>
+                        </p>
+                        <span>Навыки: верстка по стилям Bootstrap по макету Figma, CSS, JS
+                            AJAX,  jQuery, адаптивная верстка, slick-слайдер, анимация...  </span>
                     </li>
                 </ul>
             </div>
@@ -112,10 +125,64 @@
                     самые сложные проекты.
                 </span>
             </div>
-
         </div>
     </div>
 </section>
 
+<div class="popup-bg">
+    <div class="popup">
+        <div class="logo popup-logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <img src="images/cross.png" class="img-popup" id="close-popup-img" alt="close">
+        <div class="price">
+            <div class="price-service">
+                <h3 class="price-service-title">Вёрстка сайта – перенесение графического прототипа в браузер с помощью языков html, css, js.
+                    Адаптирую под все устройства, создаём анимацию.</h3>
+
+                <p class="price-service-p">Вёрстка сайта (html, css, js) - от 10 000 руб: </p>
+                <span class="price-service-span">Сайт верстается на основе прототипа и
+                    технического задания. Вёрстка – перенесение
+                    прототипа из графического редактора в браузер
+                    с использованием языков html, css, js.</span>
+
+                <p class="price-service-p">Адаптивная версия сайта - от 15 000 руб:</p>
+                <span class="price-service-span">Если у вашего сайта еще нет версии для
+                    смартфонов и планшетов – предлагаем адаптировать
+                    ваш сайт для этих устройств. Адаптация не помешает
+                    текущей работе сайта.</span>
+
+                <p class="price-service-p">Вёрстка 1 блока страницы - от 3 000 руб: </p>
+                <span class="price-service-span">Бывает – на страницу сайта необходимо
+                    добавить новый блок с обновленным функционалом
+                    или информацией. Готова сверстать его для Вас</span>
+
+                <p class="price-service-p">Корректировка вёрстки - от 1 000 руб: </p>
+                <span class="price-service-span">Заметили на своем сайте неточность,
+                    съехали кнопки меню, текст
+                    не там расположен – обращайтесь,
+                    буду рада подправить вёрстку вашего сайта.</span>
+
+                <h3 class="price-service-title">Услуги включающие отзывчивую вёрстку сайта (резиновая + адаптивная).</h3>
+
+                <p class="price-service-p">Вёрстка лендинг пейдж - от 20 000 руб:</p>
+                <span class="price-service-span">Вёрстка лендинг пейдж на основе прототипа (4 блока).
+                    В стоимость включено: отзывчивая верстка, тестирование.</span>
+
+                <p class="price-service-p">Вёрстка сайт-визитки - от 25 000 руб:</p>
+                <span class="price-service-span">Вёрстка сайта–визитки на основе прототипа.
+                    В стоимость включено: отзывчивая верстка, тестирование.</span>
+
+                <p class="price-service-p">Вёрстка интернет-магазина - от 70 000 руб:</p>
+                <span class="price-service-span">Вёрстка интернет-магазина на основе прототипа.
+                    В стоимость включено: отзывчивая верстка, тестирование.</span>
+
+                <h4>Цена обсуждается индивидуально - исходя из поставленной задачи</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/script.js"></script>
 </body>
 </html>

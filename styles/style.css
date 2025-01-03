@@ -30,6 +30,7 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
 }
 
 .header-container {
@@ -61,7 +62,7 @@ body {
     box-sizing: border-box;
     padding: 10px 15px;
     font-size: 18px;
-
+    color: white;
     text-align: center;
 
     cursor: pointer;
@@ -203,3 +204,83 @@ body {
     color: #000000;
     font-weight: bold;
 }
+
+
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+    z-index: 10;
+    overflow: auto;
+}
+
+.popup-bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: url("../images/rb_fon.png") #3f0783 no-repeat;
+    width: 630px;
+    padding: 25px;
+    transition: 2s all;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 1s all;
+}
+
+
+.img-popup {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.price-service-title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 22px;
+    color: #92fcff;
+}
+
+.price-service-p {
+    font-size: 18px;
+    padding-top: 5px;
+    color: #f6eded;
+    line-height: 1.9;
+    font-weight: bold;
+    text-align: right;
+    display: block;
+}
+
+.price-service-span {
+    font-size: 16px;
+    color: #d0a7fc;
+    text-align: left;
+    display: inline-block;
+}
+
+.price-service h4 {
+    text-align: center;
+    padding-top: 10px;
+    color: #8c2c2c;
+}
+
+
